@@ -15,14 +15,11 @@ header {
   height: 5vh;
 }
 
-footer {
-  display: flex;
-  background-color: #020a1f;
-  color: white;
-  justify-content: space-between;
-}
-footer a {
+header input {
+  text-align: center;
   align-self: center;
+  height: 2.25rem;
+  border-radius: 1rem;
 }
 
 #kundvagn {
@@ -41,11 +38,15 @@ aside a {
   text-decoration: none;
 }
 
-header input {
-  text-align: center;
+
+footer {
+  display: flex;
+  background-color: #020a1f;
+  color: white;
+  justify-content: space-between;
+}
+footer a {
   align-self: center;
-  height: 2.25rem;
-  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -71,5 +72,8 @@ header input {
   }
   footer {
     height: 12vh;
+  }
+  nav{
+    display: none;
   }
 }
