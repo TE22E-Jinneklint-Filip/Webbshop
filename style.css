@@ -44,6 +44,12 @@ aside a {
   color: black;
   text-decoration: none;
 }
+aside a:hover {
+color: blue;
+}
+aside a:active {
+  color: red;
+}
 aside li{
   list-style: none;
   padding: 10% 0;
