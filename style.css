@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Racing Sans One", sans-serif;
 }
 
 body {
@@ -45,12 +46,12 @@ aside a {
   text-decoration: none;
 }
 aside a:hover {
-color: blue;
+  color: blue;
 }
 aside a:active {
   color: red;
 }
-aside li{
+aside li {
   list-style: none;
   padding: 10% 0;
 }
