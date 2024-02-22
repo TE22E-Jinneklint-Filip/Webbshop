@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Racing Sans One", sans-serif;
+  text-align: center;
 }
 
 body {
@@ -13,10 +14,11 @@ header {
   background-color: #d9d9d9;
   display: flex;
   justify-content: space-between;
-  height: 5vh;
+  height: 10vh; 
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 1rem;
+  height: 8vh;
 }
 
 header input {
@@ -31,7 +33,6 @@ header input {
   background-color: white;
   border-radius: 0.75rem;
   text-size-adjust: auto;
-  text-align: center;
 }
 
 aside {
@@ -72,25 +73,28 @@ footer a {
 }
 
 .produkter {
+  display: flex;
+  justify-content: center;
   background-color: #d9d9d9;
   margin: 0.5rem;
+  padding: 0.25rem;
+  flex-direction: column;
+}
+
+.produkter img {
+  height: 25vh;
+  width: 25vw;
 }
 
 nav {
   background-color: #d9d9d9;
 }
 @media only screen and (max-width: 767px) {
-  header {
-    height: 5vh;
-  }
   aside {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  header {
-    height: 7vh;
-  }
   aside {
     display: none;
   }
