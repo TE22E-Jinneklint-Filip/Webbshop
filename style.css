@@ -46,15 +46,16 @@ aside a {
   color: black;
   text-decoration: none;
 }
-aside a:hover {
-  color: blue;
-}
-aside a:active {
-  color: red;
-}
 aside li {
   list-style: none;
   padding: 10% 0;
+}
+
+a:hover {
+  color: blue;
+}
+a:active {
+  color: red;
 }
 
 main {
@@ -72,7 +73,7 @@ footer a {
   align-self: center;
 }
 
-.produkter {
+.produkt {
   display: flex;
   justify-content: center;
   background-color: #d9d9d9;
@@ -81,28 +82,37 @@ footer a {
   flex-direction: column;
 }
 
-.produkter img {
-  height: 25vh;
-  width: 25vw;
-}
-
 nav {
   background-color: #d9d9d9;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 767px) {
   aside {
     display: none;
   }
+  .produkter {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .produkt img {
+    height: 25vh;
+    width: 75vw;
+  }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   aside {
     display: none;
+  }
+  .produkter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+  .produkt img {
+    height: 30vh;
+    width: 40vw;
   }
 }
 
@@ -112,5 +122,14 @@ nav {
   }
   nav {
     display: none;
+  }
+  .produkter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+  }
+  .produkt img {
+    height: 25vh;
+    width: 25vw;
   }
 }
