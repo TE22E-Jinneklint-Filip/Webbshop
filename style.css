@@ -18,7 +18,6 @@ header {
   background-color: #d9d9d9;
   display: flex;
   justify-content: space-between;
-
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 1rem;
@@ -33,10 +32,24 @@ header input {
   width: 50vw;
 }
 
-#kundvagn {
+#kundvagn_innehåll {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 12rem;
   background-color: white;
-  border-radius: 0.75rem;
-  text-size-adjust: auto;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#kundvagn:focus-within > #kundvagn_innehåll {
+  display: flex;
+  flex-direction: column;
 }
 
 aside {
@@ -115,9 +128,9 @@ nav p {
     height: 25vh;
     width: 75vw;
   }
-  header button img{
+  header button img {
     height: 4vh;
-    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -133,9 +146,9 @@ nav p {
     height: 30vh;
     width: 40vw;
   }
-  header button img{
+  header button img {
     height: 4vh;
-    }
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -154,7 +167,7 @@ nav p {
     height: 25vh;
     width: 25vw;
   }
-  header button img{
+  header button img {
     height: 8vh;
-    }
+  }
 }
