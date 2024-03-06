@@ -20,7 +20,10 @@
           <img src="img/Kundvagn.webp" alt="kundvagn" />
         </button>
         <div id="kundvagn_innehåll">
-          <img src="img/Baslåda.webp" alt="" />
+          <h2>kundvagn</h2>
+          <li id="kundvagns-lista"></li>
+          <p>Summa: <span id="Summa">0</span></p>
+          <button id="rensaknapp">Rensa kundvagn</button>
         </div>
       </div>
     </header>
@@ -68,38 +71,40 @@
         <div class="produkt">
           <img src="img/Rostig fälg.webp" alt="Sport fälgar" />
           <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h3>275:-</h3>
+          <button onclick="add ('Fälgar',275)"><p>Lägg till</p></button>
         </div>
         <div class="produkt">
           <img src="img/Baslåda.webp" alt="Baslåda" />
-          <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h2>Baslåda</h2>
+          <h3>350:-</h3>
+          <button onclick="add ('Baslåda',350)"><p>Lägg till</p></button>
         </div>
         <div class="produkt">
           <img src="img/rostiga rör.webp" alt="Sport avgassystem" />
-          <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h2>Sport avgassystem</h2>
+          <h3>5000:-</h3>
+          <button onclick="add ('Sport avgassystem',5000)">
+            <p>Lägg till</p>
+          </button>
         </div>
         <div class="produkt">
           <img src="img/Turbo.webp" alt="Turbo" />
-          <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h2>Turbo</h2>
+          <h3>7500:-</h3>
+          <button onclick="add ('Turbo',7500)"><p>Lägg till</p></button>
         </div>
         <div class="produkt">
           <img src="img/Lampor.webp" alt="Off-road lyktor" />
-          <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h2>Off-road lyktor</h2>
+          <h3>20:-</h3>
+          <button onclick="add ('Off-road lyktor',20)"><p>Lägg till</p></button>
         </div>
         <div class="produkt">
           <img src="img/vax.webp" alt="Vax och trasa" />
-          <h2>Fälgar</h2>
-          <h3>200:-</h3>
-          <button><p>Lägg till</p></button>
+          <h2>Vax</h2>
+          <h3>50:-</h3>
+          <button onclick="add ('Vax',50)"><p>Lägg till</p></button>
         </div>
       </div>
     </main>
